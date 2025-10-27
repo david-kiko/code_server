@@ -128,4 +128,5 @@ site/
 # 本地开发
 .local/
 local/
-dev/
+dev/# Claude Code local settings
+.claude/settings.local.json
