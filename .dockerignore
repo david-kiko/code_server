@@ -1,0 +1,68 @@
+# 容器编排管理平台 - Docker忽略文件
+
+# Git相关
+.git
+.gitignore
+
+# Node.js/前端
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.next/
+out/
+build/
+.cache/
+.env*
+
+# Go后端
+vendor/
+*.exe
+*.test
+*.out
+go.sum
+*.prof
+
+# 确保包含必要的文件
+!go.mod
+!go.sum
+
+# IDE和编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# 测试和覆盖率
+coverage/
+*.lcov
+
+# 文档
+docs/
+!README.md
+!CLAUDE.md
+!SOLUTION.md
+
+# 配置文件
+config/local.*
+kubeconfig*
+*.key
+*.crt
+*.pem
+
+# 日志
+logs/
+*.log
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+
+# 本地开发
+.local/
+dev/
