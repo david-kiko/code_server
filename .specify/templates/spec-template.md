@@ -79,16 +79,32 @@
 
 <!--
   ACTION REQUIRED: The content in this section represents placeholders.
-  Fill them out with the right functional requirements.
+  Fill them out with the right functional requirements following constitution principles.
 -->
 
 ### Functional Requirements
 
 - **FR-001**: System MUST [specific capability, e.g., "allow users to create accounts"]
-- **FR-002**: System MUST [specific capability, e.g., "validate email addresses"]  
+- **FR-002**: System MUST [specific capability, e.g., "validate email addresses"]
 - **FR-003**: Users MUST be able to [key interaction, e.g., "reset their password"]
 - **FR-004**: System MUST [data requirement, e.g., "persist user preferences"]
 - **FR-005**: System MUST [behavior, e.g., "log all security events"]
+
+### Quality Requirements *(Constitution-Aligned)*
+
+- **QR-001**: Code MUST be maintainable with functions not exceeding 50 lines
+- **QR-002**: All features MUST include comprehensive tests with 90%+ coverage
+- **QR-003**: User interfaces MUST follow consistent design patterns
+- **QR-004**: API responses MUST complete within 200ms (95th percentile)
+- **QR-005**: Error messages MUST be clear and actionable
+
+### Testing Requirements *(Constitution-Aligned)*
+
+- **TR-001**: Unit tests MUST be written BEFORE implementation code (TDD)
+- **TR-002**: Integration tests MUST verify component interactions
+- **TR-003**: Performance tests MUST validate response time requirements
+- **TR-004**: All tests MUST be automated in CI/CD pipeline
+- **TR-005**: Tests MUST be deterministic and repeatable
 
 *Example of marking unclear requirements:*
 

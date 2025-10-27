@@ -31,7 +31,10 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] **Code Quality**: Design supports maintainable, readable code with clear responsibilities
+- [ ] **Testing Standards**: Test-driven development approach planned with 90%+ coverage target
+- [ ] **User Experience**: Consistent UI/UX patterns and accessible design considerations
+- [ ] **Performance Requirements**: Response time and resource limits defined and achievable
 
 ## Project Structure
 

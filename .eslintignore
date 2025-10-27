@@ -1,0 +1,35 @@
+# ESLint忽略文件
+
+# 依赖目录
+node_modules/
+dist/
+build/
+out/
+.next/
+
+# 生成文件
+*.min.js
+*.bundle.js
+
+# 配置文件
+coverage/
+*.log
+
+# 临时文件
+.tmp/
+.temp/
+
+# 文档
+docs/
+
+# 测试覆盖率报告
+coverage/
+.nyc_output/
+
+# 第三方库
+public/vendor/
+
+# 构建工具
+webpack.config.js
+rollup.config.js
+vite.config.js
