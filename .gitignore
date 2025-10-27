@@ -30,7 +30,7 @@ vendor/
 *.pprof
 
 # Go模块缓存
-go.sum
+# go.sum (必需文件，不应该被忽略)
 
 # 前端忽略规则 (Node.js/React/Next.js)
 node_modules/

@@ -20,7 +20,6 @@ vendor/
 *.exe
 *.test
 *.out
-go.sum
 *.prof
 
 # 确保包含必要的文件
