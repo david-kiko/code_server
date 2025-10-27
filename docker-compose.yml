@@ -40,6 +40,7 @@ services:
 
   # 后端服务
   backend:
+    image: 192.168.248.198:5000/container-platform-backend:1.0.0
     build:
       context: ./backend
       dockerfile: Dockerfile
@@ -77,6 +78,7 @@ services:
 
   # 前端服务
   frontend:
+    image: 192.168.248.198:5000/container-platform-frontend:1.0.0
     build:
       context: ./frontend
       dockerfile: Dockerfile
