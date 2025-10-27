@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: container-platform
+  labels:
+    name: container-platform
+    app: container-platform
+---
+# 配置映射 - 应用配置
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: container-platform-config
+  namespace: container-platform
+  labels:
+    app: container-platform
+    component: config
+data:
+  config.yaml: |
+    server:
+      port: "8080"
+      host: "0.0.0.0"
+      read_timeout: "30s"
+      write_timeout: "30s"
+    logging:
+      level: "info"
+      format: "json"
+      output: "stdout"
+    kubernetes:
+      timeout: "30s"
+      namespace: "container-platform"

@@ -1,0 +1,131 @@
+# 容器编排管理平台 - Git忽略文件
+
+# 操作系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE和编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Go后端忽略规则
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+vendor/
+*.prof
+*.pprof
+
+# Go模块缓存
+go.sum
+
+# 前端忽略规则 (Node.js/React/Next.js)
+node_modules/
+.next/
+out/
+dist/
+build/
+.cache/
+.temp/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# 前端环境变量
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 前端包管理器
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# TypeScript
+*.tsbuildinfo
+
+# ESLint
+.eslintcache
+
+# Prettier
+.prettierignore
+
+# 测试覆盖率
+coverage/
+*.lcov
+.nyc_output
+
+# 数据库文件
+*.db
+*.sqlite
+*.sqlite3
+
+# 配置文件包含敏感信息
+config/local.*
+*.key
+*.crt
+*.pem
+kubeconfig*
+*.secret.yaml
+secrets/
+
+# 日志文件
+logs/
+*.log
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Docker
+.dockerignore
+Dockerfile.*
+docker-compose.override.yml
+
+# Kubernetes
+*.secret.yaml
+secrets/
+.kube/
+
+# Terraform (如果使用)
+.terraform/
+*.tfstate*
+*.tfvars
+.terraform.lock.hcl
+
+# 备份文件
+*.bak
+*.backup
+*.old
+
+# 文档生成
+docs/generated/
+site/
+
+# 性能分析
+*.prof
+*.pprof
+
+# 本地开发
+.local/
+local/
+dev/
