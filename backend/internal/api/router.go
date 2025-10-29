@@ -1,6 +1,9 @@
 package api
 
 import (
+	"os"
+	"strings"
+
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )
@@ -45,13 +48,9 @@ func (r *Router) setupGlobalMiddleware() {
 	// 错误处理中间件
 	r.engine.Use(gin.Recovery())
 
-	// CORS中间件
+	// CORS中间件 - 完全开放
 	corsConfig := cors.DefaultConfig()
-	corsConfig.AllowOrigins = []string{
-		"http://localhost:3000",
-		"http://localhost:8080",
-		"http://frontend:3000",
-	}
+	corsConfig.AllowAllOrigins = true
 	corsConfig.AllowMethods = []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"}
 	corsConfig.AllowHeaders = []string{
 		"Origin",

@@ -40,6 +40,7 @@ services:
 
   # 后端服务
   backend:
+    image: container-platform-backend:1.0.0
     build:
       context: ./backend
       dockerfile: Dockerfile
@@ -55,6 +56,7 @@ services:
       - JWT_SECRET=your-jwt-secret-change-in-production
       - LOG_LEVEL=info
       - KUBECONFIG_PATH=
+      - CORS_ALLOWED_ORIGINS=*
     volumes:
       - ~/.kube:/root/.kube:ro  # 挂载Kubernetes配置
       - ./backend/logs:/app/logs
@@ -77,6 +79,7 @@ services:
 
   # 前端服务
   frontend:
+    image: container-platform-frontend:1.0.0
     build:
       context: ./frontend
       dockerfile: Dockerfile
